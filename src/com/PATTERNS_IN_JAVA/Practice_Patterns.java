@@ -6,19 +6,27 @@ public class Practice_Patterns {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        //pattern1(4);
-        //pattern2(5);
-        //pattern3(10, 20);
-        //pattern4(5);
-        //pattern5(5);
+        pattern1(4);
+        System.out.println("________________________________________________________________________");
+        pattern2(5);
+        System.out.println("________________________________________________________________________");
+        pattern3(10, 20);
+        System.out.println("________________________________________________________________________");
+        pattern4(5);
+        System.out.println("________________________________________________________________________");
+        pattern5(5);
+        System.out.println("________________________________________________________________________");
         pattern6(10);
+        System.out.println("________________________________________________________________________");
+        pattern7(10);
+        System.out.println("________________________________________________________________________");
     }
 
     // For Triangle Pattern
     static void pattern1(int n) {
         for (int row = 1; row <= n; row++) {
             for (int col = 1; col <= row; col++) {
-                System.out.print("*");
+                System.out.print(" * ");
             }
             System.out.println("");
         }
@@ -26,12 +34,13 @@ public class Practice_Patterns {
 
     }
 
-    // For Reverse Triangle Pattern
+    // For Filled Rectangle
     static void pattern2(int m) {
         for (int row = 1; row <= m; row++) {
-            for (int col = row; col >= m; col--) {
-                System.out.println("*");
+            for (int col = 1; col <= m; col++) {
+                System.out.print(" * ");
             }
+            System.out.println(" ");
         }
     }
 
@@ -85,7 +94,7 @@ public class Practice_Patterns {
 
     }
 
-    // For Triangle Pattern
+    // For Numeric Triangle Pattern
     static void pattern6(int n) {
         for (int row = 1; row <= n; row++) {
             for (int col = 1; col <= row; col++) {
@@ -95,6 +104,27 @@ public class Practice_Patterns {
         }
 
 
+    }
+
+    // For merging of Triangle and Reverse Triangle
+    static void pattern7(int n) {
+        // There must be two nested loops
+        //First Outer Loop
+        for (int row = 1; row <= n; row++) {
+            // First Inner Loop
+            for (int col = 1; col <= row; col++) {
+                System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
+        //Second Outer Loop
+        for (int row = n; row >= 1; row--) {
+            // First Inner Loop
+            for (int col = 1; col <= row - 1; col++) {
+                System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
     }
 
 }
