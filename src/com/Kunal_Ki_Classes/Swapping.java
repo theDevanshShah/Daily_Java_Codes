@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class Swapping {
     public static void main(String[] args) {
+
         swap();
+
     }
 
     public static void swap() {
