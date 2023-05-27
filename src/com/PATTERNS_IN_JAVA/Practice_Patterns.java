@@ -1,6 +1,6 @@
 package com.PATTERNS_IN_JAVA;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Practice_Patterns {
 
@@ -20,6 +20,9 @@ public class Practice_Patterns {
         System.out.println("________________________________________________________________________");
         pattern7(10);
         System.out.println("________________________________________________________________________");
+        pattern8(10);
+        System.out.println("________________________________________________________________________");
+        printPattern(10);
     }
 
     // For Triangle Pattern
@@ -28,7 +31,7 @@ public class Practice_Patterns {
             for (int col = 1; col <= row; col++) {
                 System.out.print(" * ");
             }
-            System.out.println("");
+            System.out.println();
         }
 
 
@@ -100,7 +103,7 @@ public class Practice_Patterns {
             for (int col = 1; col <= row; col++) {
                 System.out.print(" " + col + " ");
             }
-            System.out.println("");
+            System.out.println();
         }
 
 
@@ -124,6 +127,43 @@ public class Practice_Patterns {
                 System.out.print(" * ");
             }
             System.out.println(" ");
+        }
+    }
+
+    // Pattern 8
+    public static void pattern8(int n) {
+        // Outer Loop
+        int space;
+        for (int row = n; row >= 1; row--) {
+            for (space = n - row; space <= n; space++) {
+                System.out.print(" ");
+            }
+            for (int col = n; col >= row; col--) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+
+
+    public static void printPattern(int n) {
+        int i, j;
+
+        // outer loop to handle rows
+        for (i = n; i >= 1; i--) {
+
+            // inner loop to print spaces.
+            for (j = 1; j < i; j++) {
+                System.out.print(" ");
+            }
+
+            // inner loop to print stars.
+            for (j = 0; j <= n - i; j++) {
+                System.out.print("*");
+            }
+
+            // printing new line for each row
+            System.out.println();
         }
     }
 
