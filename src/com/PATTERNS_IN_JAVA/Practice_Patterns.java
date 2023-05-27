@@ -9,8 +9,9 @@ public class Practice_Patterns {
         //pattern1(4);
         //pattern2(5);
         //pattern3(10, 20);
-        pattern4(5);
-        pattern5(5);
+        //pattern4(5);
+        //pattern5(5);
+        pattern6(10);
     }
 
     // For Triangle Pattern
@@ -81,6 +82,18 @@ public class Practice_Patterns {
             }
             System.out.println(" ");
         }
+
+    }
+
+    // For Triangle Pattern
+    static void pattern6(int n) {
+        for (int row = 1; row <= n; row++) {
+            for (int col = 1; col <= row; col++) {
+                System.out.print(" " + col + " ");
+            }
+            System.out.println("");
+        }
+
 
     }
 
