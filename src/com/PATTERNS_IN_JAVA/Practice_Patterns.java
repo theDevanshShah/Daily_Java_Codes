@@ -8,14 +8,16 @@ public class Practice_Patterns {
         Scanner sc = new Scanner(System.in);
         //pattern1(4);
         //pattern2(5);
-        pattern3(10, 20);
+        //pattern3(10, 20);
+        pattern4(5);
+        pattern5(5);
     }
 
     // For Triangle Pattern
     static void pattern1(int n) {
         for (int row = 1; row <= n; row++) {
             for (int col = 1; col <= row; col++) {
-                System.out.print("* ");
+                System.out.print("*");
             }
             System.out.println("");
         }
@@ -50,6 +52,36 @@ public class Practice_Patterns {
             }
             System.out.println(" ");
         }
+    }
+
+
+    //Pattern 4 --> Reverse Triangle
+    static void pattern4(int n) {
+        //Outer Loop
+        for (int row = n; row >= 1; row--) {
+
+            // Inner Loop
+            for (int col = 1; col <= row; col++) {
+                System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+
+    //Pattern 4 --> Reverse Triangle Also Can Be Done Like This
+    static void pattern5(int n) {
+        //Outer Loop
+        for (int row = 1; row <= n; row++) {
+
+            // Inner Loop
+            for (int col = 1; col <= n - row + 1; col++) {
+                System.out.print(" * ");
+            }
+            System.out.println(" ");
+        }
+
     }
 
 }
