@@ -2,6 +2,15 @@ package com.PATTERNS_IN_JAVA;
 
 import java.util.*;
 
+/*
+
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+
+ * */
 public class Pattern_3 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
