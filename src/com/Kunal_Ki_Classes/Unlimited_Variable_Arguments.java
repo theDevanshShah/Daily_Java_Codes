@@ -6,7 +6,7 @@ public class Unlimited_Variable_Arguments {
 
     // If I want to take limited arguments for a methods in Java
     public static void limitedArgs(int A, int B) {
-        System.out.println("A = " + A + " & B = " + B);
+        System.out.println("A = " + A + " & B is equal to  =  " + B);
     }
 
     // But If I want to take UNLIMITED arguments for a methods in Java
