@@ -16,8 +16,18 @@ public class Unlimited_Variable_Arguments {
         //Again
     }
 
+    // But If I want to take LIMITED & UNLIMITED arguments for a methods in Java
+    public static void hybrid(int A, int B, String... STR) {
+
+        System.out.println("Limited ones are " + A + " " + B + " " + Arrays.toString(STR));
+
+        // Here Used Arrays.toString() for converting it into ARRAY
+        //Again
+    }
+
     public static void main(String[] args) {
         limitedArgs(3, 5);
         unLimitedArgs(4, 24, 56, 821, 2345, 0);
+        hybrid(2, 3, "dfsdf", "sdffs", "fwsfw");
     }
 }
