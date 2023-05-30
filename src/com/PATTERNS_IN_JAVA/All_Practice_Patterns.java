@@ -17,6 +17,9 @@ public class All_Practice_Patterns {
         pattern_8_number_triangle_rotated_180();
         pattern_9_number_triangle_floyds();
         pattern_10_number_triangle_binary();
+        pattern_11_Full_Triangle();
+        pattern_12_Reverse_Pyramid();
+        pattern_13_Diamond();
     }
 
     static void pattern_1_solid_cube() {
@@ -221,4 +224,99 @@ public class All_Practice_Patterns {
             System.out.println();
         }
     }
+
+    static void pattern_11_Full_Triangle() {
+        System.out.println();
+        System.out.println();
+        System.out.println("Pattern 11 : Pyramid");
+        System.out.print("Enter The N : ");
+        Scanner sc = new Scanner(System.in);
+
+        int rows = sc.nextInt();
+        for (int i = 1; i <= rows; i++) {
+            // Print spaces before each row
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print asterisks for the current row
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+    }
+
+    static void pattern_12_Reverse_Pyramid() {
+        System.out.println();
+        System.out.println();
+        System.out.println("Pattern 12 : Reverse Pyramid");
+        System.out.print("Enter The N : ");
+        Scanner sc = new Scanner(System.in);
+
+
+        int rows = sc.nextInt();
+        for (int i = rows; i >= 1; i--) {
+            // Print spaces before each row
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print asterisks for the current row
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+    }
+
+
+    static void pattern_13_Diamond() {
+        System.out.println();
+        System.out.println();
+        System.out.println("Pattern 13 : Diamond");
+        System.out.print("Enter The N : ");
+        Scanner sc = new Scanner(System.in);
+
+
+        //First Loop
+        int rows = sc.nextInt();
+        for (int i = 1; i <= rows; i++) {
+            // Print spaces before each row
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print asterisks for the current row
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+        int rows2 = rows - 1;
+        //Second Loop
+        for (int i = rows2; i >= 1; i--) {
+            // Print spaces before each row
+            for (int j = 1; j <= rows - i; j++) {
+                System.out.print(" ");
+            }
+
+            // Print asterisks for the current row
+            for (int k = 1; k <= i; k++) {
+                System.out.print("* ");
+            }
+
+            // Move to the next line
+            System.out.println();
+        }
+
+    }
 }
+
+
