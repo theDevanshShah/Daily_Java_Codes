@@ -6,7 +6,7 @@ public class All_Practice_Patterns {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-
+        System.out.println("All_Practice_Patterns");
         pattern_1_solid_cube();
         pattern_2_hollow_cube();
         pattern_3_left_triangle();
