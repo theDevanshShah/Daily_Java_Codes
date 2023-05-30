@@ -13,6 +13,7 @@ public class Binary_Triangle {
             // Inner Loop
             for (int j = 1; j <= i; j++) {
                 int sum = j + i;
+                //Condition
                 if (sum % 2 != 0) {
                     System.out.print(" " + 0 + " ");
                 } else {
