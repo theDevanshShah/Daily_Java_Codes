@@ -1,9 +1,9 @@
 package com.Code_With_Harry;
 
-import java.util.*;
+import java.util.Scanner;
 
 public class Practice_Set_3 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
 //        // Problem 1 : Convert String To Lower Case
@@ -64,7 +64,14 @@ public class Practice_Set_3 {
         //Problem 6 : Draw a pattern of triangle
         System.out.println("Problem 6 : 180 Degree Rotated Left Cornered Triangle");
         System.out.println(" ");
+        int n = 5;
         //Outer Loop
-        
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+
+        }
     }
 }
