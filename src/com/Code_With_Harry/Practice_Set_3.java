@@ -3,6 +3,42 @@ package com.Code_With_Harry;
 import java.util.Scanner;
 
 public class Practice_Set_3 {
+    public static void problem7() {
+        System.out.println("Problem 7 : Write a program to find sum of first N numbers. ");
+        System.out.println();
+        System.out.print("Enter the N here : ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+
+            if (i % 2 == 0) {
+
+                System.out.println(i);
+
+
+            }
+
+        }
+
+        System.out.println("Sum : " + sum);
+    }
+
+    public static void problem6() {
+        //Problem 6 : Draw a pattern of triangle
+        System.out.println("Problem 6 : 180 Degree Rotated Left Cornered Triangle");
+        System.out.println(" ");
+        int n = 5;
+        //Outer Loop
+        for (int i = n; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -61,17 +97,7 @@ public class Practice_Set_3 {
 
         System.out.println(" ");
 
-        //Problem 6 : Draw a pattern of triangle
-        System.out.println("Problem 6 : 180 Degree Rotated Left Cornered Triangle");
-        System.out.println(" ");
-        int n = 5;
-        //Outer Loop
-        for (int i = n; i >= 1; i--) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(" * ");
-            }
-            System.out.println();
 
-        }
+        problem7();
     }
 }
