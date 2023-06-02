@@ -19,6 +19,7 @@ public class Practice_Set_3 {
 
             }
 
+
         }
 
         System.out.println("Sum : " + sum);
@@ -27,6 +28,7 @@ public class Practice_Set_3 {
     public static void problem6() {
         //Problem 6 : Draw a pattern of triangle
         System.out.println("Problem 6 : 180 Degree Rotated Left Cornered Triangle");
+        System.out.println("Devasnsh Shah");
         System.out.println(" ");
         int n = 5;
         //Outer Loop
