@@ -14,8 +14,6 @@ public class Practice_set_3 {
 
             if (i % 2 == 0) {
 
-                System.out.println(i);
-
 
             }
 
