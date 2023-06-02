@@ -12,7 +12,6 @@ public class Array {
         arrayInt[1] = 2;
         arrayInt[2] = 3;
         arrayInt[3] = 4;
-        arrayInt[4] = 5;
-        System.out.println(arrayInt[4]);
+        System.out.println(arrayInt[2]);
     }
 }
