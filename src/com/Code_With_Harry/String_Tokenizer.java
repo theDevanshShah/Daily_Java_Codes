@@ -6,14 +6,14 @@ import java.util.StringTokenizer;
 public class String_Tokenizer {
     public static void main(String[] args) {
 
-        // Single Delimiter Here it is coma( , ) It also can be a space
+//        // Single Delimiter Here it is coma( , ) It also can be a space
         String s1 = "Devansh,is,a,good,boy";
         StringTokenizer st1 = new StringTokenizer(s1, ",");
         while (st1.hasMoreTokens()) {
             System.out.println(st1.nextToken());
         }
 
-        // Multiple Character Delimiter Here it is coma("Devansh") It also can be a space
+//        // Multiple Character Delimiter Here it is coma("Devansh") It also can be a space
         String s2 = "DevanshisDevanshisDevanshisDevanshisDevanshisDevanshisDevanshis";
         StringTokenizer st2 = new StringTokenizer(s2, "Devansh");
         while (st2.hasMoreTokens()) {
@@ -28,6 +28,8 @@ public class String_Tokenizer {
             System.out.println(st3.nextToken());
 
         }
+
+
     }
 
 }
