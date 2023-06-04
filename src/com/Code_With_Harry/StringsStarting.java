@@ -15,6 +15,11 @@ public class StringsStarting {
         String firstString = "Hyy This is one way to create string";
         String secondString = new String("Hyy This is another way to create string");
 
+        String newKeyword = new String("Hello Hetarth");
+        System.out.println(newKeyword);
+        newKeyword = new String("Hello Devansh");
+        System.out.println(newKeyword);
+
         //Printing Those Strings
         System.out.println(firstString);
         System.out.println(secondString);
