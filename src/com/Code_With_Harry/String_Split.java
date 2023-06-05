@@ -1,18 +1,28 @@
 package com.Code_With_Harry;
 
+import java.util.StringTokenizer;
 import java.util.*;
 
 public class String_Split {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
 
 
-        // String Split Method
-        String myString = sc.next();
-        String[] splitArray = myString.split(" ");
+        Scanner scanner = new Scanner(System.in);
 
-        for (String substring : splitArray) {
-            System.out.println(substring);
+
+        String input = scanner.nextLine();
+
+        StringTokenizer tokenizer = new StringTokenizer(input);
+        int tokenCount = tokenizer.countTokens();
+
+        System.out.println(tokenCount);
+
+        while (tokenizer.hasMoreTokens()) {
+            String token = tokenizer.nextToken();
+            System.out.println(token);
         }
+
+        scanner.close();
     }
 }
+
