@@ -11,7 +11,8 @@ public class Funny {
                 "Why did the computer go to the doctor? Because it had a virus!",
                 "Why don't skeletons fight each other? They don't have the guts!",
                 "Why couldn't the bicycle find its way home? It lost its bearings!",
-                "Why did the scarecrow win an award? Because he was outstanding in his field!"
+                "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                "Devansh is a good guy"
         };
 
         Random random = new Random();
