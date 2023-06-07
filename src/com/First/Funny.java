@@ -12,7 +12,7 @@ public class Funny {
                 "Why don't skeletons fight each other? They don't have the guts!",
                 "Why couldn't the bicycle find its way home? It lost its bearings!",
                 "Why did the scarecrow win an award? Because he was outstanding in his field!",
-                "Devansh is a good guy"
+                "Devansh is a got offer from CIVICA today"
         };
 
         Random random = new Random();
