@@ -5,12 +5,10 @@ import java.util.Scanner;
 public class Array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String newKeyword = new String("Hello Hetarth");
-        System.out.println(newKeyword);
-        newKeyword = new String("Hello Devansh");
-        System.out.println(newKeyword);
 
-        alreadyValued();
+
+        // alreadyValued();
+        userValued();
 
     }
 
@@ -101,6 +99,37 @@ public class Array {
             System.out.println("Element at index " + i + " is :" + intArr[i]);
         }
 
+
+    }
+
+    public static void userValued() {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter The Length Of The Array : ");
+        int length = sc.nextInt();
+        int[] numbers = new int[length];
+
+        // Populating Array
+        System.out.println("Enter The Elements Of The Array");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print("Enter The Element For Index " + i + " : ");
+            numbers[i] = sc.nextInt();
+        }
+
+        //Accessing The Array
+        for (int i = 0; i < length; i++) {
+            System.out.print(" " + numbers[i]);
+        }
+
+
+        for (int i = 0; i < length; i++) {
+            System.out.println("\nElement Of Array's Index " + i + " : " + numbers[i]);
+        }
+
+        // Printing Array
+        System.out.println(numbers.toString());
+
+        int[] n = {1, 2, 2, 4, 4};
 
     }
 }
