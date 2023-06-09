@@ -10,7 +10,7 @@ public class Array {
         //alreadyValued();
         //userValued();
         //practiseArray();
-
+        changingElement();
     }
 
     public static void alreadyValued() {
@@ -149,10 +149,24 @@ public class Array {
         }
 
         // Accessing Array
-        for (int i = 0; i < length; i++) {
-            System.out.println("Item At Index : " + i + " is " + mainArray[i]);
-
+//        for (int i = 0; i < length; i++) {
+//            System.out.println("Item At Index : " + i + " is " + mainArray[i]);
+//
+//        }
+        for (int j : mainArray) {
+            System.out.println("Item At Index : " + j + " is " + mainArray[j]);
         }
+
+    }
+
+    public static void changingElement() {
+        String[] arr = {"Devansh", "Hetarth", "Rutvi", "Dhruvi"};
+
+        System.out.println("Before : " + arr[2]);
+
+        arr[3] = "Kasak";
+
+        System.out.println("After : " + arr[3]);
 
     }
 }
