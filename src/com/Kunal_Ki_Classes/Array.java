@@ -1,5 +1,6 @@
 package com.Kunal_Ki_Classes;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array {
@@ -161,12 +162,14 @@ public class Array {
 
     public static void changingElement() {
         String[] arr = {"Devansh", "Hetarth", "Rutvi", "Dhruvi"};
-
+        System.out.println(Arrays.toString(arr));
         System.out.println("Before : " + arr[2]);
 
-        arr[3] = "Kasak";
 
-        System.out.println("After : " + arr[3]);
+        arr[2] = "Kasak";
+        System.out.println(Arrays.toString(arr));
+        System.out.println("After : " + arr[2]);
+
 
     }
 }
