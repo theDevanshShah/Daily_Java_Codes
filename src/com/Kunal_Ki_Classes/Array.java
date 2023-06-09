@@ -7,8 +7,9 @@ public class Array {
         Scanner sc = new Scanner(System.in);
 
 
-        // alreadyValued();
-        userValued();
+        //alreadyValued();
+        //userValued();
+        practiseArray();
 
     }
 
@@ -131,6 +132,25 @@ public class Array {
 
         int[] n = {1, 2, 2, 4, 4};
 
+    }
+
+
+    public static void practiseArray() {
+        System.out.print("Enter the length of array :");
+        Scanner sc = new Scanner(System.in);
+        int arrayLength = sc.nextInt();
+        int[] mainArray = new int[arrayLength];
+
+        // Populating Array
+        for (int i = 0; i < arrayLength; i++) {
+            System.out.print("Enter the item at index " + i + " : ");
+            mainArray[i] = sc.nextInt();
+        }
+
+        // Accessing The Array
+        for (int i = 0; i < arrayLength; i++) {
+            System.out.println("Array Index " + i + " : " + mainArray[i]);
+        }
     }
 }
 
