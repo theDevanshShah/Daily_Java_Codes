@@ -9,7 +9,7 @@ public class Array {
 
         //alreadyValued();
         //userValued();
-        practiseArray();
+        //practiseArray();
 
     }
 
@@ -136,21 +136,24 @@ public class Array {
 
 
     public static void practiseArray() {
-        System.out.print("Enter the length of array :");
+
         Scanner sc = new Scanner(System.in);
-        int arrayLength = sc.nextInt();
-        int[] mainArray = new int[arrayLength];
+        System.out.print("Enter the length of array : ");
+        int length = sc.nextInt();
+        int[] mainArray = new int[length];
 
         // Populating Array
-        for (int i = 0; i < arrayLength; i++) {
-            System.out.print("Enter the item at index " + i + " : ");
+        for (int i = 0; i < length; i++) {
+            System.out.print("Index : " + i + " ");
             mainArray[i] = sc.nextInt();
         }
 
-        // Accessing The Array
-        for (int i = 0; i < arrayLength; i++) {
-            System.out.println("Array Index " + i + " : " + mainArray[i]);
+        // Accessing Array
+        for (int i = 0; i < length; i++) {
+            System.out.println("Item At Index : " + i + " is " + mainArray[i]);
+
         }
+
     }
 }
 
