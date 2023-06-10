@@ -6,9 +6,16 @@ public class twoDarray {
     public static void main(String[] args) {
         // This programme is for 2D arrays
 
-        int[][] array2D = {{1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}, {1, 2, 3, 4, 5}};
-        System.out.println(array2D.length);
-        System.out.println(Arrays.deepToString(array2D));
-        
+        int[][] arr = new int[9][3];
+
+        // Populating Array
+        for (int col = 0; col < arr.length; col++) {
+
+        }
+        //Accessing Array
+
+        for (int row = 0; row < arr.length; row++) {
+            System.out.println(Arrays.toString(arr));
+        }
     }
 }
