@@ -5,31 +5,37 @@ import java.util.Arrays;
 
 public class SumOfFloats {
     public static void main(String[] args) {
-        populateArray();
+        float mainArray[] = populateArray();
+        float sum = SumOfFloats(mainArray);
+        System.out.println("\n\nThe sum of the array elements is: " + sum);
     }
 
-    public static void populateArray() {
+    public static float[] populateArray() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the length of array : ");
         int length = sc.nextInt();
-        int[] mainArray = new int[length];
+        float[] mainArray = new float[length];
 
         // Populating Array
         for (int i = 0; i < length; i++) {
-            System.out.print("At Index no " + i + " the value will be :");
-            mainArray[i] = sc.nextInt();
+            System.out.print("At Index no " + i + " the value will be : ");
+            mainArray[i] = sc.nextFloat();
         }
-
-        // For Accessing Array
-//        for (int j : mainArray) {
-//            System.out.println("Item At Index : " + j + " is " + mainArray[j]);
-//        }
 
         System.out.println("\nSo, Your Array Looks Like This\n");
-        //Accessing The Array
-        for (int i = 0; i < length; i++) {
-            System.out.print(" " + mainArray[i]);
+        System.out.print(Arrays.toString(mainArray));
+
+        return mainArray;
+
+    }
+
+
+    public static float SumOfFloats(float[] mainArray) {
+        float sum = 0.0f;
+        for (int i = 0; i < mainArray.length; i++) {
+            sum += mainArray[i];
         }
+        return sum;
     }
 
 }
