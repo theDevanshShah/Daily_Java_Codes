@@ -12,6 +12,8 @@ public class Array_Reversal {
         int[] mainArray = populateArray();
         int[] reversedArray = array_reversal(mainArray);
         System.out.println(Arrays.toString(reversedArray));
+// Easy Method
+        otherReverse();
 
 
     }
@@ -48,6 +50,14 @@ public class Array_Reversal {
 
 
         return reversedArray;
+    }
+
+    static void otherReverse() {
+        int[] array = {1, 2, 3, 4, 5};
+        for (int i = array.length - 1; i >= 0; i--) {
+            System.out.print(" " + array[i]);
+
+        }
     }
 
 
