@@ -8,6 +8,9 @@ public class Sum_Of_Floats {
         float mainArray[] = populateArray();
         float sum = SumOfFloats(mainArray);
         System.out.println("\n\nThe sum of the array elements is: " + sum);
+
+        // Easy Method
+        sum();
     }
 
     public static float[] populateArray() {
@@ -35,6 +38,18 @@ public class Sum_Of_Floats {
         for (int i = 0; i < mainArray.length; i++) {
             sum += mainArray[i];
         }
+        return sum;
+    }
+
+
+    // Sum = sum + elements
+    public static float sum() {
+        float[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        float sum = 0.0f;
+        for (float elements : array) {
+            sum = sum + elements;
+        }
+        System.out.println(sum);
         return sum;
     }
 
