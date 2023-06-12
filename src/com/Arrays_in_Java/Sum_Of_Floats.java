@@ -3,7 +3,7 @@ package com.Arrays_in_Java;
 import java.util.*;
 import java.util.Arrays;
 
-public class SumOfFloats {
+public class Sum_Of_Floats {
     public static void main(String[] args) {
         float mainArray[] = populateArray();
         float sum = SumOfFloats(mainArray);

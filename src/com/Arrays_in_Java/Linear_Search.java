@@ -1,11 +1,10 @@
 // Write a program to find out whether a given integer is present in an array or not.
 package com.Arrays_in_Java;
 
-import java.io.OptionalDataException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LinearSearch {
+public class Linear_Search {
 
 
     public static void main(String[] args) {
