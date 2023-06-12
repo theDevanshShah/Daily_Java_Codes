@@ -4,27 +4,54 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matrix_2by3 {
+    public static void main(String[] args) {
+        System.out.println("\n---Enter The Values For First Matrix---\n");
+        int[][] matrix1 = populating();
+        System.out.println("\n---Enter The Values For Second Matrix---\n");
+        int[][] matrix2 = populating();
+        sumOfMatrices(matrix1, matrix2);
+    }
 
-    public class Basic_Snippet {
-        public static void main(String[] args) {
-            populateArray();
-        }
 
-        public static void populateArray() {
-            Scanner sc = new Scanner(System.in);
-            System.out.print("Enter the length of array : ");
-            int length = sc.nextInt();
-            int[] mainArray = new int[length];
+    public static int[][] populating() {
+        Scanner sc = new Scanner(System.in);
 
-            // Populating Array
-            for (int i = 0; i < length; i++) {
-                System.out.print("At Index no " + i + " the value will be :");
-                mainArray[i] = sc.nextInt();
+        int[][] twoDarray = new int[2][3];
+
+        // Actual Populating Array
+        for (int i = 0; i < twoDarray.length; i++) {
+            for (int j = 0; j < twoDarray[i].length; j++) {
+                twoDarray[i][j] = sc.nextInt();
             }
-
-            // Accessing Array
-            System.out.println(Arrays.toString(mainArray));
         }
+
+        // Accessing Array
+        for (int i = 0; i < twoDarray.length; i++) {
+            for (int j = 0; j < twoDarray[i].length; j++) {
+                System.out.print(" " + twoDarray[i][j]);
+            }
+            System.out.println();
+        }
+        return twoDarray;
+    }
+
+    public static void sumOfMatrices(int[][] matrix1, int[][] matrix2) {
+        int result[][] = new int[2][3];
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[i].length; j++) {
+                result[i][j] = matrix1[i][j] + matrix2[i][j];
+            }
+        }
+
+        System.out.println("\n---So,The Sum Of The Two Strings Is--- \n");
+        for (int i = 0; i < result.length; i++) {
+            for (int j = 0; j < result[i].length; j++) {
+                System.out.print(" " + result[i][j] + " ");
+            }
+            System.out.println();
+        }
+
 
     }
+
 }
