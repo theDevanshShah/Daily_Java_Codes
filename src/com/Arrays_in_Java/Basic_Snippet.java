@@ -20,16 +20,8 @@ public class Basic_Snippet {
             mainArray[i] = sc.nextInt();
         }
 
-        // For Accessing Array
-//        for (int j : mainArray) {
-//            System.out.println("Item At Index : " + j + " is " + mainArray[j]);
-//        }
-
-        System.out.println("\nSo, Your Array Looks Like This\n");
-        //Accessing The Array
-        for (int i = 0; i < length; i++) {
-            System.out.print(" " + mainArray[i]);
-        }
+        // Accessing Array
+        System.out.println(Arrays.toString(mainArray));
     }
 
 }
