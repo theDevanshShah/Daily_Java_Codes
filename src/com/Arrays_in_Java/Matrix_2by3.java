@@ -1,6 +1,5 @@
 package com.Arrays_in_Java;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matrix_2by3 {
