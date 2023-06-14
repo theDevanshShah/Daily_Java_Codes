@@ -14,7 +14,9 @@ public class All_in_One {
     // Matrix Sum
 
     public static void main(String[] args) {
-        The_1D_Array_population();
+        //The_1D_Array_population();
+        The_2D_Array_population();
+
     }
 
     public static void The_1D_Array_population() {
@@ -31,11 +33,23 @@ public class All_in_One {
 
     public static void The_2D_Array_population() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter The Rows Of Array : ");
+        System.out.print("\n\nEnter The Rows Of Array : ");
         int rows = sc.nextInt();
-        System.out.print("Enter The Rows Of Array : ");
+        System.out.print("Enter The Cols Of Array : ");
         int cols = sc.nextInt();
         int[][] Elements = new int[rows][cols];
 
+
+        for (int i = 0; i < Elements.length; i++) {
+            for (int j = 0; j < Elements[i].length; j++) {
+                Elements[i][j] = sc.nextInt();
+            }
+            System.out.println();
+        }
+        System.out.println(Arrays.deepToString(Elements));
+
+        for (int a; a < Elements.length; a++) {
+
+        }
     }
 }
