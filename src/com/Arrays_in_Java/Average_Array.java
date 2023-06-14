@@ -14,7 +14,7 @@ public class Average_Array {
 
     public static int[] populateArray() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the length of array here: ");
+        System.out.print("Enter the length of Array : ");
         int length = sc.nextInt();
         int[] mainArray = new int[length];
 
