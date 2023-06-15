@@ -29,7 +29,7 @@ public class Matrix_2by3 {
             for (int j = 0; j < twoDarray[i].length; j++) {
                 System.out.print(" " + twoDarray[i][j]);
             }
-            System.out.println();
+            System.out.println("HEllo ");
         }
         return twoDarray;
     }

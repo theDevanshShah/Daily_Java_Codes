@@ -48,8 +48,11 @@ public class All_in_One {
         }
         System.out.println(Arrays.deepToString(Elements));
 
-        for (int a; a < Elements.length; a++) {
-
+        for (int i = 0; i < Elements.length; i++) {
+            for (int j = 0; j < Elements[rows].length; j++) {
+                System.out.print(" " + Elements[i][j]);
+            }
+            System.out.println();
         }
     }
 }
