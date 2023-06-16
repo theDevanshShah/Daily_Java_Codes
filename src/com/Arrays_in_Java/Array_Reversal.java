@@ -1,7 +1,6 @@
 //Write a Java program to reverse an array.
 package com.Arrays_in_Java;
 
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -38,7 +37,7 @@ public class Array_Reversal {
     }
 
     public static int[] array_reversal(int[] mainArray) {
-        //Scanner sc = new Scanner(System.in);
+        
         int[] reversedArray = new int[mainArray.length];
 
         // MAIN CALCULATION

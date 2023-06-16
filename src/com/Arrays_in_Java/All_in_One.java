@@ -14,10 +14,11 @@ public class All_in_One {
     // Matrix Sum
 
     public static void main(String[] args) {
-        //The_1D_Array_population();
-        //The_2D_Array_population();
-        //Sum_Of_Floats();
+        The_1D_Array_population();
+        The_2D_Array_population();
+        Sum_Of_Floats();
         Linear_Search();
+        Array_Reversal();
 
 
     }
@@ -93,13 +94,31 @@ public class All_in_One {
         System.out.print("\nEnter The Target : ");
         int Target = sc.nextInt();
         for (int i = 0; i < length; i++) {
-            if (Target == i) {
-                System.out.println("Target Found At Index : " + (i - 1));
+            if (Target == Linear_Search[i]) {
+                System.out.println("Target Found At Index : " + (i));
                 return 0;
             }
-
         }
         System.out.println("Target Not Found");
         return 0;
+    }
+
+    public static void Array_Reversal() {
+        System.out.println("\n\n<---Pattern 5--->");
+        System.out.print("Enter The Length Of Array : ");
+        Scanner sc = new Scanner(System.in);
+        int Length = sc.nextInt();
+        int[] Array = new int[Length];
+        for (int i = 0; i < Length; i++) {
+            Array[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(Array));
+
+
+        // Main Logic
+        int[] Reversed_Array = new int[Length];
+        for (int i = Array.length - 1; i >= 0; i--) {
+            System.out.println(" " + Array[i]);
+        }
     }
 }
