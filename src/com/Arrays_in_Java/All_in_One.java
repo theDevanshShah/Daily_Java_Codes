@@ -15,7 +15,9 @@ public class All_in_One {
 
     public static void main(String[] args) {
         //The_1D_Array_population();
-        The_2D_Array_population();
+        //The_2D_Array_population();
+        Sum_Of_Floats();
+
 
     }
 
@@ -49,10 +51,27 @@ public class All_in_One {
         System.out.println(Arrays.deepToString(Elements));
 
         for (int i = 0; i < Elements.length; i++) {
-            for (int j = 0; j < Elements[rows].length; j++) {
+            for (int j = 0; j < Elements[i].length; j++) {
                 System.out.print(" " + Elements[i][j]);
             }
             System.out.println();
         }
+    }
+
+    public static void Sum_Of_Floats() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\n\nEnter The Number Of Elements In Array : ");
+        int length = sc.nextInt();
+        float[] Array_Of_Floats = new float[length];
+        for (int i = 0; i < length; i++) {
+            Array_Of_Floats[i] = sc.nextFloat();
+        }
+        System.out.println(Arrays.toString(Array_Of_Floats));
+
+        float sum = 0.0f;
+        for (int i = 0; i < length; i++) {
+            sum += Array_Of_Floats[i];
+        }
+        System.out.println("So The Sum Of All Float Items Is : " + sum + "\n\n");
     }
 }
