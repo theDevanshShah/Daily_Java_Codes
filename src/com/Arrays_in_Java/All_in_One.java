@@ -16,12 +16,14 @@ public class All_in_One {
     public static void main(String[] args) {
         //The_1D_Array_population();
         //The_2D_Array_population();
-        Sum_Of_Floats();
+        //Sum_Of_Floats();
+        Linear_Search();
 
 
     }
 
     public static void The_1D_Array_population() {
+        System.out.println("<---Program Number 1---> \n");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter The Length Of Array : ");
         int length = sc.nextInt();
@@ -34,6 +36,7 @@ public class All_in_One {
     }
 
     public static void The_2D_Array_population() {
+        System.out.println("<---Program Number 2---> \n");
         Scanner sc = new Scanner(System.in);
         System.out.print("\n\nEnter The Rows Of Array : ");
         int rows = sc.nextInt();
@@ -59,6 +62,7 @@ public class All_in_One {
     }
 
     public static void Sum_Of_Floats() {
+        System.out.println("<---Program Number 3---> \n");
         Scanner sc = new Scanner(System.in);
         System.out.print("\n\nEnter The Number Of Elements In Array : ");
         int length = sc.nextInt();
@@ -73,5 +77,29 @@ public class All_in_One {
             sum += Array_Of_Floats[i];
         }
         System.out.println("So The Sum Of All Float Items Is : " + sum + "\n\n");
+    }
+
+
+    public static int Linear_Search() {
+        System.out.println("\n\n<---Program Number 4---> \n");
+        Scanner sc = new Scanner(System.in);
+        System.out.print("\nEnter The Number Of Elements In Array : ");
+        int length = sc.nextInt();
+        int[] Linear_Search = new int[length];
+        for (int i = 0; i < length; i++) {
+            Linear_Search[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(Linear_Search));
+        System.out.print("\nEnter The Target : ");
+        int Target = sc.nextInt();
+        for (int i = 0; i < length; i++) {
+            if (Target == i) {
+                System.out.println("Target Found At Index : " + (i - 1));
+                return 0;
+            }
+
+        }
+        System.out.println("Target Not Found");
+        return 0;
     }
 }
