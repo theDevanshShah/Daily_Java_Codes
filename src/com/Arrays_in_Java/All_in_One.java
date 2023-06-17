@@ -14,10 +14,10 @@ public class All_in_One {
     // Matrix Sum
 
     public static void main(String[] args) {
-        The_1D_Array_population();
-        The_2D_Array_population();
-        Sum_Of_Floats();
-        Linear_Search();
+//        The_1D_Array_population();
+//        The_2D_Array_population();
+//        Sum_Of_Floats();
+//        Linear_Search();
         Array_Reversal();
 
 
@@ -113,12 +113,14 @@ public class All_in_One {
             Array[i] = sc.nextInt();
         }
         System.out.println(Arrays.toString(Array));
-
-
-        // Main Logic
-        int[] Reversed_Array = new int[Length];
         for (int i = Array.length - 1; i >= 0; i--) {
             System.out.println(" " + Array[i]);
         }
+        // Reversed Array
+        int[] Reversed_Array = new int[Array.length];
+        for (int i = 0; i < Length; i++) {
+            Reversed_Array[i] = Array[Length - 1 - i];
+        }
+        System.out.println(Arrays.toString(Reversed_Array));
     }
 }
