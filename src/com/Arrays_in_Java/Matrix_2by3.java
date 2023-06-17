@@ -23,13 +23,15 @@ public class Matrix_2by3 {
                 twoDarray[i][j] = sc.nextInt();
             }
         }
+        
+        System.out.println("");
 
         // Accessing Array
         for (int i = 0; i < twoDarray.length; i++) {
             for (int j = 0; j < twoDarray[i].length; j++) {
                 System.out.print(" " + twoDarray[i][j]);
             }
-            System.out.println("HEllo !!! ");
+            System.out.println("");
         }
         return twoDarray;
     }

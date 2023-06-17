@@ -19,8 +19,8 @@ public class All_in_One {
 //        Sum_Of_Floats();
 //        Linear_Search();
 //        Array_Reversal();
-        Average_Of_Array();
-
+//        Average_Of_Array();
+        Sum_Of_Matrix();
 
     }
 
@@ -142,5 +142,48 @@ public class All_in_One {
         System.out.println(" The Sum Of All Elements Of An Array IS : " + Sum);
         float Average = (float) Sum / Length;
         System.out.println("The Average Of All Elements From Array IS : " + Average);
+    }
+
+    public static void Sum_Of_Matrix() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("<--- PROGRAM 6 --->");
+
+        // Matrix One Stuffed
+        System.out.println("Enter The Length Of Row Of Matrix One: ");
+        int Row = sc.nextInt();
+        System.out.println("Enter The Length Of Col : ");
+        int Col = sc.nextInt();
+        int[][] Matrix1 = new int[Row][Col];
+        for (int i = 0; i < Matrix1.length; i++) {
+            for (int j = 0; j < Matrix1[i].length; j++) {
+                Matrix1[i][j] = sc.nextInt();
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < Matrix1.length; i++) {
+            for (int j = 0; j < Matrix1[i].length; j++) {
+                System.out.println(" " + Matrix1[i][j] + " ");
+            }
+
+        }
+
+
+        // Matrix Two Stuffed
+        int Row2 = Row;
+        int Col2 = Col;
+        int[][] Matrix2 = new int[Row2][Col2];
+
+        for (int i = 0; i < Matrix2.length; i++) {
+            for (int j = 0; j < Matrix2[i].length; j++) {
+                Matrix2[i][j] = sc.nextInt();
+            }
+            System.out.println();
+        }
+        for (int i = 0; i < Matrix2.length; i++) {
+            for (int j = 0; j < Matrix2[i].length; j++) {
+                System.out.println(" " + Matrix2[i][j] + " ");
+            }
+        }
+
     }
 }
