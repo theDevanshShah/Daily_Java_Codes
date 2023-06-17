@@ -160,11 +160,13 @@ public class All_in_One {
             }
             System.out.println();
         }
+
+
         for (int i = 0; i < Matrix1.length; i++) {
             for (int j = 0; j < Matrix1[i].length; j++) {
                 System.out.println(" " + Matrix1[i][j] + " ");
             }
-
+            System.out.println();
         }
 
 
@@ -183,6 +185,7 @@ public class All_in_One {
             for (int j = 0; j < Matrix2[i].length; j++) {
                 System.out.println(" " + Matrix2[i][j] + " ");
             }
+            System.out.println();
         }
 
     }
