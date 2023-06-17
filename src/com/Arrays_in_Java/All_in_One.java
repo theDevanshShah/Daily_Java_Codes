@@ -18,7 +18,8 @@ public class All_in_One {
 //        The_2D_Array_population();
 //        Sum_Of_Floats();
 //        Linear_Search();
-        Array_Reversal();
+//        Array_Reversal();
+        Average_Of_Array();
 
 
     }
@@ -122,5 +123,24 @@ public class All_in_One {
             Reversed_Array[i] = Array[Length - 1 - i];
         }
         System.out.println(Arrays.toString(Reversed_Array));
+    }
+
+    public static void Average_Of_Array() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("<---Average Of Array--->");
+        System.out.println("Enter The Length Of An Array : ");
+        int Length = sc.nextInt();
+        int[] Array = new int[Length];
+        for (int i = 0; i < Length; i++) {
+            Array[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(Array));
+        int Sum = 0;
+        for (int i = 0; i < Length; i++) {
+            Sum += i;
+        }
+        System.out.println(" The Sum Of All Elements Of An Array IS : " + Sum);
+        float Average = (float) Sum / Length;
+        System.out.println("The Average Of All Elements From Array IS : " + Average);
     }
 }
