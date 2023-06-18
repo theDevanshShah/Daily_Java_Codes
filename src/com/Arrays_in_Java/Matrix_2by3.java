@@ -23,7 +23,7 @@ public class Matrix_2by3 {
                 twoDarray[i][j] = sc.nextInt();
             }
         }
-        
+
         System.out.println("");
 
         // Accessing Array
@@ -44,7 +44,7 @@ public class Matrix_2by3 {
             }
         }
 
-        System.out.println("\n---So,The Sum Of The Two Strings Is--- \n");
+        System.out.println("\n<---So,The Sum Of The Two Strings Is---> \n");
         for (int i = 0; i < result.length; i++) {
             for (int j = 0; j < result[i].length; j++) {
                 System.out.print(" " + result[i][j] + " ");
