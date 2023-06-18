@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Matrix_2by3 {
     public static void main(String[] args) {
-        System.out.println("\n---Enter The Values For First Matrix---\n");
+        System.out.println("\n<---Enter The Values For First Matrix--->\n");
         int[][] matrix1 = populating();
         System.out.println("\n<---Enter The Values For Second Matrix--->\n");
         int[][] matrix2 = populating();
