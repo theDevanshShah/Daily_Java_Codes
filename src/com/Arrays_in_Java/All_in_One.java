@@ -205,8 +205,8 @@ public class All_in_One {
         System.out.println(Arrays.deepToString(Dynamic_Arr));
 
         for (int i = 0; i < Dynamic_Arr.length; i++) {
-            for (int j = 0; j < Dynamic_Arr.length; j++) {
-                System.out.print(Arrays.toString(Dynamic_Arr[i]));
+            for (int j = 0; j < Dynamic_Arr[i].length; j++) {
+                System.out.print(" " + Dynamic_Arr[i][j] + " ");
             }
             System.out.println();
         }
