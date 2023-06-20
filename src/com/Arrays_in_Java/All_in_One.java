@@ -12,6 +12,7 @@ public class All_in_One {
     // Array Reversal
     // Average Of Array
     // Matrix Sum
+    // Dynamic Array
 
     public static void main(String[] args) {
 //        The_1D_Array_population();
@@ -19,8 +20,10 @@ public class All_in_One {
 //        Sum_Of_Floats();
 //        Linear_Search();
 //        Array_Reversal();
-//        Average_Of_Array();
-        Sum_Of_Matrix();
+//        Average_Of_Array()
+//        Sum_Of_Matrix();
+        Dynamic_Array();
+
 
     }
 
@@ -189,4 +192,24 @@ public class All_in_One {
         }
 
     }
+
+    public static void Dynamic_Array() {
+        Scanner sc = new Scanner(System.in);
+        int[][] Dynamic_Arr = {
+                {01, 03},
+                {12, 04, 05},
+                {01, 300},
+                {02, 454, 78, 90, 9},
+                {1}
+        };
+        System.out.println(Arrays.deepToString(Dynamic_Arr));
+
+        for (int i = 0; i < Dynamic_Arr.length; i++) {
+            for (int j = 0; j < Dynamic_Arr.length; j++) {
+                System.out.print(Arrays.toString(Dynamic_Arr[i]));
+            }
+            System.out.println();
+        }
+    }
+
 }
