@@ -23,6 +23,9 @@ public class Array_List {
         for (int i = 0; i < double_List.size(); i++) {
             System.out.println(double_List.get(i));
         }
-
+        System.out.println(double_List.contains(5));
+        System.out.println(double_List.contains(10.00));
+        double_List.set(0, 10.99);
+        System.out.println(double_List.get(0));
     }
 }
