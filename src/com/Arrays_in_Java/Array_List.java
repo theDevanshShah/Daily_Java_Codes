@@ -11,6 +11,18 @@ public class Array_List {
         list.add(40);
         list.add(50);
 
-        System.out.println(list.get(1));
+        Array_List();
+    }
+
+    public static void Array_List() {
+        ArrayList<Integer> list = new ArrayList<Integer>(5);
+        ArrayList<Double> double_List = new ArrayList<Double>(5);
+        double_List.add(10.00);
+        double_List.add(10.0);
+        double_List.add(10.1231231);
+        for (int i = 0; i < double_List.size(); i++) {
+            System.out.println(double_List.get(i));
+        }
+
     }
 }
