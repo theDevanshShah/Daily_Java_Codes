@@ -18,6 +18,7 @@ public class Array_List {
             System.out.println(list.get(i));
         }
         System.out.println(list);
+        System.out.println("1st commit");
 
     }
 }
