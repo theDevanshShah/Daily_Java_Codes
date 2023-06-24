@@ -23,6 +23,7 @@ public class Array_List {
         System.out.println("3rd commit");
         System.out.println("4th commit");
         System.out.println("5th commit");
+        System.out.println("6th commit");
 
     }
 }
