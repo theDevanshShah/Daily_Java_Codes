@@ -20,6 +20,7 @@ public class Array_List {
         System.out.println(list);
         System.out.println("1st commit");
         System.out.println("2nd commit");
+        System.out.println("3rd commit");
 
     }
 }
