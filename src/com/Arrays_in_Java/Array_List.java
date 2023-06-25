@@ -5,7 +5,8 @@ import java.util.*;
 public class Array_List {
     public static void main(String[] args) {
         // All_Types_Of_List();
-        Automatic_Array_Lists();
+        // Automatic_Array_Lists();
+        Sorting_ArrayList();
     }
 
     static void All_Types_Of_List() {
@@ -107,5 +108,27 @@ public class Array_List {
             List.add(sc.nextInt());
         }
         System.out.println(List);
+    }
+
+    public static void Sorting_ArrayList() {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> Sorted_ArrayList = new ArrayList<Integer>();
+        System.out.println("Enter The Length Of An List : ");
+        int Length = sc.nextInt();
+
+        for (int i = 0; i < Length; i++) {
+            Sorted_ArrayList.add(sc.nextInt());
+        }
+
+        // Un-Sorted Array List
+        System.out.println();
+        System.out.println(Sorted_ArrayList);
+
+        // Sorting Process
+        Collections.sort(Sorted_ArrayList);
+
+        // Sorted Array List
+        System.out.println();
+        System.out.println(Sorted_ArrayList);
     }
 }
