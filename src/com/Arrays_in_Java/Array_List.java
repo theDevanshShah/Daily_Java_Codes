@@ -52,6 +52,7 @@ public class Array_List {
         System.out.println(Element3);
         System.out.println(Element4);
 
+        // Printing ArrayLists
         System.out.println("\nBefore Changes");
         System.out.println(Integer_List);
         System.out.println(String_List);
@@ -66,6 +67,29 @@ public class Array_List {
 
         System.out.println();
         System.out.println("After Changes");
+        System.out.println(Integer_List);
+        System.out.println(String_List);
+        System.out.println(Float_List);
+        System.out.println(Boolean_List);
+
+        // Setting Different Values To An Existing Array List Item
+
+        //Before Changes
+        System.out.println(String_List);
+
+        //After Changes
+        String New_String = " Maxii";
+        String_List.set(5, New_String);
+        System.out.println(String_List);
+
+        // Removing An Existing ArrayList Element
+        Integer_List.remove(5);
+        String_List.remove(5);
+        Float_List.remove(5);
+        Boolean_List.remove(5);
+
+        // Printing Lists Again To See The Changes
+        System.out.println();
         System.out.println(Integer_List);
         System.out.println(String_List);
         System.out.println(Float_List);
