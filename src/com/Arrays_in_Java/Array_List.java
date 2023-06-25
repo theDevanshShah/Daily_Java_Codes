@@ -4,10 +4,11 @@ import java.util.*;
 
 public class Array_List {
     public static void main(String[] args) {
-        // All_Types_Of_List();
-        // Automatic_Array_Lists();
-        // Sorting_ArrayList();
-        Manually_Searching_ArrayList();
+//        All_Types_Of_List();
+//        Automatic_Array_Lists();
+//        Sorting_ArrayList();
+//        Manually_Searching_ArrayList();
+        Reversing_ArrayList();
     }
 
     static void All_Types_Of_List() {
@@ -103,7 +104,7 @@ public class Array_List {
         Scanner sc = new Scanner(System.in);
 
         ArrayList<Integer> List = new ArrayList<Integer>();
-        System.out.println("Enter The Lingth Of An Array List : ");
+        System.out.println("Enter The Length Of An Array List : ");
         int Length = sc.nextInt();
         for (int i = 0; i < Length; i++) {
             List.add(sc.nextInt());
@@ -114,7 +115,7 @@ public class Array_List {
     public static void Sorting_ArrayList() {
         Scanner sc = new Scanner(System.in);
         ArrayList<Integer> Sorted_ArrayList = new ArrayList<Integer>();
-        System.out.println("Enter The Length Of An List : ");
+        System.out.print("Enter The Length Of An List : ");
         int Length = sc.nextInt();
 
         for (int i = 0; i < Length; i++) {
@@ -159,5 +160,20 @@ public class Array_List {
         }
         System.out.println("Element Not Found");
         return 0;
+    }
+
+    public static void Reversing_ArrayList() {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> Reversed_ArrayList = new ArrayList<Integer>();
+        System.out.print("Enter The Length Of ArrayList : ");
+        int Length = sc.nextInt();
+        for (int i = 0; i < Length; i++) {
+            Reversed_ArrayList.add(sc.nextInt());
+        }
+        System.out.println(Reversed_ArrayList);
+
+        Collections.reverse(Reversed_ArrayList);
+
+        System.out.println(Reversed_ArrayList);
     }
 }
