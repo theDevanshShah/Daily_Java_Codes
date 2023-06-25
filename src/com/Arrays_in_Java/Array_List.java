@@ -4,7 +4,8 @@ import java.util.*;
 
 public class Array_List {
     public static void main(String[] args) {
-        All_Types_Of_List();
+        // All_Types_Of_List();
+        Automatic_Array_Lists();
     }
 
     static void All_Types_Of_List() {
@@ -94,5 +95,17 @@ public class Array_List {
         System.out.println(String_List);
         System.out.println(Float_List);
         System.out.println(Boolean_List);
+    }
+
+    public static void Automatic_Array_Lists() {
+        Scanner sc = new Scanner(System.in);
+
+        ArrayList<Integer> List = new ArrayList<Integer>();
+        System.out.println("Enter The Lingth Of An Array List : ");
+        int Length = sc.nextInt();
+        for (int i = 0; i < Length; i++) {
+            List.add(sc.nextInt());
+        }
+        System.out.println(List);
     }
 }
