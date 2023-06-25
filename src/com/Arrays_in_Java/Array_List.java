@@ -8,7 +8,8 @@ public class Array_List {
 //        Automatic_Array_Lists();
 //        Sorting_ArrayList();
 //        Manually_Searching_ArrayList();
-        Reversing_ArrayList();
+//        Reversing_ArrayList();
+        Manually_Reversed_ArrayList();
     }
 
     static void All_Types_Of_List() {
@@ -170,10 +171,34 @@ public class Array_List {
         for (int i = 0; i < Length; i++) {
             Reversed_ArrayList.add(sc.nextInt());
         }
-        System.out.println(Reversed_ArrayList);
+        System.out.println("Original ArrayList : " + Reversed_ArrayList);
 
         Collections.reverse(Reversed_ArrayList);
 
         System.out.println(Reversed_ArrayList);
+    }
+
+    public static void Manually_Reversed_ArrayList() {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> Reversed_ArrayList = new ArrayList<Integer>();
+        System.out.print("Enter The Length Of ArrayList : ");
+        int Length = sc.nextInt();
+        for (int i = 0; i < Length; i++) {
+            Reversed_ArrayList.add(sc.nextInt());
+        }
+        System.out.println("Original ArrayList : " + Reversed_ArrayList);
+
+        // Main Reversing Logic
+        int item1 = 0;
+        int item2 = Length - 1;
+        int swapper;
+        while (item1 < item2) {
+            swapper = Reversed_ArrayList.get(item1);
+            Reversed_ArrayList.set(item1, Reversed_ArrayList.get(item2));
+            Reversed_ArrayList.set(item2, swapper);
+            item1++;
+            item2--;
+        }
+        System.out.println("Reversed Array : " + Reversed_ArrayList);
     }
 }
