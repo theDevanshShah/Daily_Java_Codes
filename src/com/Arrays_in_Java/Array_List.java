@@ -6,7 +6,8 @@ public class Array_List {
     public static void main(String[] args) {
         // All_Types_Of_List();
         // Automatic_Array_Lists();
-        Sorting_ArrayList();
+        // Sorting_ArrayList();
+        Manually_Searching_ArrayList();
     }
 
     static void All_Types_Of_List() {
@@ -130,5 +131,33 @@ public class Array_List {
         // Sorted Array List
         System.out.println();
         System.out.println(Sorted_ArrayList);
+    }
+
+    public static int Manually_Searching_ArrayList() {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Integer> Sorted_ArrayList = new ArrayList<Integer>();
+        System.out.print("Enter The Length Of An List : ");
+        int Length = sc.nextInt();
+
+        for (int i = 0; i < Length; i++) {
+            Sorted_ArrayList.add(sc.nextInt());
+        }
+
+        // The Populated Array List
+        System.out.println();
+        System.out.println(Sorted_ArrayList);
+
+        System.out.print("Enter The Targeted Element Of An List : ");
+        int Target = sc.nextInt();
+
+        for (int i = 0; i < Length; i++) {
+            if (Sorted_ArrayList.get(i) == Target) {
+                System.out.println("Yes, The Element Found At Index Number : " + i);
+                return 0;
+            }
+
+        }
+        System.out.println("Element Not Found");
+        return 0;
     }
 }
