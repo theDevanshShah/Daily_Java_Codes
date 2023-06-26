@@ -5,5 +5,6 @@ public class spamm {
         System.out.println("First Commit");
         System.out.println("Second Commit");
         System.out.println("Third Commit");
+        System.out.println("Fourth Commit");
     }
 }
