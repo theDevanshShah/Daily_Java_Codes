@@ -1,0 +1,4 @@
+// Basic Input OutPut Things
+Console.Write("Hello World");
+Console.WriteLine("Hello World Again");
+Console.ReadLine();
