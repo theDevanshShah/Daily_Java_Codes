@@ -2,3 +2,13 @@
 Console.Write("Hello World");
 Console.WriteLine("Hello World Again");
 Console.ReadLine();
+
+// Commonly Used DataTypes In C#
+
+Integer   >> int    Age = 18;
+Long      >> long   Phone_Number = 9099506866;
+Float     >> float  Percentage = 7.43;
+Double    >> double Temperature = 30.05;
+Boolean   >> bool   isTrue = true;
+Character >> char   Gender = 'M';
+String    >> string Name = "Elon Musk";
