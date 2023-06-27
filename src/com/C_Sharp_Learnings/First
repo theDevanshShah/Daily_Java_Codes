@@ -7,8 +7,31 @@ Console.ReadLine();
 
 Integer   >> int    Age = 18;
 Long      >> long   Phone_Number = 9099506866;
-Float     >> float  Percentage = 7.43;
-Double    >> double Temperature = 30.05;
+Float     >> float  Percentage = 7.43F;
+Double    >> double Temperature = 30.05D;
 Boolean   >> bool   isTrue = true;
 Character >> char   Gender = 'M';
 String    >> string Name = "Elon Musk";
+
+
+// Writing A Basic C# Program To Get To Know More About I/O Stuff In C#
+
+
+using System;
+
+class Program{
+static void main(String[] args){
+
+Console.Write("Enter Your First Name : ");
+string name = Console.ReadLine();
+
+Console.Write("Enter Your Age : ");
+int age = int.Parse(Console.Read());
+
+Console.Write("Enter Your Height In Foot : ");
+double height = double.Parse(Console.ReadLine());
+
+Console.Write("Are You A Student ? true/false");
+boolean isStudent = bool.Parse(Console.ReadLine());
+}
+}
