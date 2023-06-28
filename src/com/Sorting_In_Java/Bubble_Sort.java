@@ -11,8 +11,9 @@ public class Bubble_Sort {
         int N = sc.nextInt();
         int[] array = new int[N];
 
-        System.out.println("Enter the elements of the array:");
+
         for (int i = 0; i < array.length; i++) {
+            System.out.print("Enter the element of the array for index number : " + i);
             array[i] = sc.nextInt();
         }
 
