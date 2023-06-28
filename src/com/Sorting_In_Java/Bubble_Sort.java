@@ -33,3 +33,15 @@ public class Bubble_Sort {
         System.out.println("Array after sorting: " + Arrays.toString(array));
     }
 }
+
+// By Using Bitwise Swapping Logic
+//        for (int i = 0; i < array.length - 1; i++) {
+//        for (int j = 0; j < array.length - i - 1; j++) {
+//        if (array[j] > array[j + 1]) {
+//        // Swapping Logic using Bitwise XOR
+//        array[j] = array[j] ^ array[j + 1];
+//        array[j + 1] = array[j] ^ array[j + 1];
+//        array[j] = array[j] ^ array[j + 1];
+//        }
+//        }
+//        }
