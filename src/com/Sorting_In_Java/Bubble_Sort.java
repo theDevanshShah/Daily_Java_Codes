@@ -1,10 +1,19 @@
 package com.Sorting_In_Java;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Bubble_Sort {
     public static void main(String[] args) {
-        int[] array = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        Scanner sc = new Scanner(System.in);
+
+
+        System.out.println(" Enter The Length Of An Array : ");
+        int N = sc.nextInt();
+        int[] array = new int[N];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = sc.nextInt();
+        }
         System.out.print("Without Sorting : " + Arrays.toString(array));
 
         // Bubble Sort Logic
