@@ -13,7 +13,7 @@ public class Bubble_Sort {
 
 
         for (int i = 0; i < array.length; i++) {
-            System.out.print("Enter the element of the array for index number : " + i);
+            System.out.print("Enter the element of the array for index number " + i + " :");
             array[i] = sc.nextInt();
         }
 
