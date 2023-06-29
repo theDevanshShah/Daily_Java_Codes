@@ -43,12 +43,13 @@ public class Linear_Search_For_String {
     public static void Linear_Search() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter The String Here : ");
-        String Word = sc.next();
-
-        char Target = 'D';
+        String Word = sc.nextLine();
+        System.out.print("Enter The Targeted Character Here : ");
+        String Target = sc.next();
+        char TargetedCharacter = Target.charAt(0);
 
         for (int i = 0; i < Word.length(); i++) {
-            if (Target == Word.charAt(i)) {
+            if (TargetedCharacter == Word.charAt(i)) {
                 System.out.print("Target Found At Index Number : " + i);
                 return;
             }
