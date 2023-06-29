@@ -24,7 +24,7 @@ public class Linear_Search {
 
     public static void Linear_Searching(int[] Array) {
         Scanner sc = new Scanner(System.in);
-        
+
         if (Array.length == 0) {
             System.out.println("The Array Is Empty!");
             return;
