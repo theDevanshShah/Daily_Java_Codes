@@ -58,4 +58,19 @@ public class Linear_Search_For_String {
         System.out.println("Target Not Found");
         return;
     }
+
+    public static void Linear_Search_With_Enhanced_For_Loop() {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter The String Here : ");
+        String Main_String = sc.nextLine();
+        char[] Array = Main_String.toCharArray();
+        System.out.print("Enter The Targeted Character Here : ");
+        String Entered_Character = sc.next();
+        char Target = Entered_Character.charAt(0);
+        for (int i = 0; i < Array.length; i++) {
+            if (Target == Array[i]) {
+                System.out.print("Target Found At Index : " + i);
+            }
+        }
+    }
 }   
