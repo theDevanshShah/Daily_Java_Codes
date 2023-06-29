@@ -24,8 +24,15 @@ public class Linear_Search {
 
     public static void Linear_Searching(int[] Array) {
         Scanner sc = new Scanner(System.in);
+        
+        if (Array.length == 0) {
+            System.out.println("The Array Is Empty!");
+            return;
+        }
+
         System.out.print("Enter The Target : ");
         int Target = sc.nextInt();
+
         for (int i = 0; i < Array.length + 1; i++) {
             if (Target == i) {
                 System.out.println("Target Found at index number : " + i);
