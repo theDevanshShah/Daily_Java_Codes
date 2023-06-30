@@ -7,65 +7,52 @@ public class OneD_Array_Solution {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter the Main Array Length: ");
+        System.out.print("Enter The Main Length : ");
         int Main_Length = sc.nextInt();
-        Main_Method(Main_Length);
-    }
-
-    public static void Main_Method(int Main_Length) {
-        if (Main_Length >= 2) {
-            Scanner sc = new Scanner(System.in);
-            for (int a = 0; a < Main_Length; a++) {
-                //      System.out.print("Enter the Length of Array Number " + (a + 1) + ": ");
-                int size = sc.nextInt();
-                int[] Array = new int[size];
-                int Leap = sc.nextInt();
-                for (int i = 0; i < Array.length; i++) {
-                    Array[i] = sc.nextInt();
-                }
-                //    System.out.println(Arrays.toString(Array));
-                //   System.out.print("Enter the Leap Value: ");
-
-
-                boolean result = isPathPossible(Array, Leap);
-                if (result) {
-                    System.out.println("YES");
-                } else {
-                    System.out.println("NO");
-                }
-            }
-        } else {
-            System.out.println("At least enter Main Length greater than 2");
-        }
-    }
-
-    public static boolean isPathPossible(int[] Array, int Leap) {
-        if (Array[0] != 0) {
-            return false;
-        }
-
-        int currentPosition = 0;
-        int n = Array.length;
-
-        for (int i = 0; i < n; i++) {
-            if (Array[currentPosition] == 1) {
-                break;
-            }
-
-            if (currentPosition + Leap >= n) {
-                currentPosition += Leap;
-            } else if (Array[currentPosition + Leap] == 0) {
-                currentPosition += Leap;
-            } else if (currentPosition + 1 >= n) {
-                currentPosition += 1;
-            } else if (Array[currentPosition + 1] == 0) {
-                currentPosition += 1;
+        for (int i = 0; i < Main_Length; i++) {
+            System.out.print("Enter The Length Of The Array Number " + (i + 1) + " : ");
+            int Length = sc.nextInt();
+            System.out.print("Enter The Leap Value : ");
+            int Leap = sc.nextInt();
+            int[] Array = Function(Length, Leap);
+            boolean result = Logic(Array, Leap);
+            if (result == true) {
+                System.out.println("Yes");
             } else {
-                return false;
+                System.out.println("No");
             }
         }
-
-        return currentPosition >= n;
     }
 
+    public static int[] Function(int Length, int Leap) {
+        Scanner sc = new Scanner(System.in);
+        int[] Array = new int[Length];
+        for (int i = 0; i < Length; i++) {
+            Array[i] = sc.nextInt();
+        }
+        System.out.println(Arrays.toString(Array));
+        return Array;
+    }
+
+    public static boolean Logic(int[] Array, int Leap) {
+        Scanner sc = new Scanner(System.in);
+
+        // Main Conditions
+        int Length = Array.length;
+
+        for (int i = 1; i < Length - 1; i++) {
+            // Main Conditions
+            int Current_Element = Array[0];
+            int Plus_One = Array[Current_Element + 1];
+            int Minus_One = Array[Current_Element - 1];
+
+            int Leaped_Value = Array[Current_Element + Leap];
+            if (Leaped_Value >= Length) {
+                return false;
+            } else if (Array[0] == 0 || Array[1] == 0 || Plus_One == 0 || Minus_One == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
